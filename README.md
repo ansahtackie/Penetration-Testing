@@ -1,9 +1,8 @@
 # Penetration Testing
 
 ## Objective
-[Brief Objective - Remove this afterwards]
 
-The Detection Lab project aimed to establish a controlled environment for simulating and detecting cyber attacks. The primary focus was to ingest and analyze logs within a Security Information and Event Management (SIEM) system, generating test telemetry to mimic real-world attack scenarios. This hands-on experience was designed to deepen understanding of network security, attack patterns, and defensive strategies.
+The goal of this project was to conduct a penetration testing to evaluate the security posture of a network of two Linux and two Windows machines and write a comprehensive report. This penetration testing involved compromising a Linux machine and using that to pivote onto the other three machines to retreive sensitive data.
 
 ### Skills Learned
 [Bullet Points - Remove this afterwards]
@@ -74,5 +73,3 @@ The Detection Lab project aimed to establish a controlled environment for simula
 
 
 
-
-*Ref 1: Network Diagram*
