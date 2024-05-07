@@ -5,7 +5,6 @@
 The goal of this project was to conduct a penetration testing to evaluate the security posture of a network of two Linux and two Windows machines and write a comprehensive report. This penetration testing involved compromising a Linux machine and using that to pivote onto the other three machines to retreive sensitive data.
 
 ### Skills Learned
-[Bullet Points - Remove this afterwards]
 
 - Running Linux commands to accomplish desired goals in the project.
 - Performing basic scans of a network to identify machines connected on the network.
@@ -52,7 +51,6 @@ The goal of this project was to conduct a penetration testing to evaluate the se
 
 
 ### Tools Used
-[Bullet Points - Remove this afterwards]
 
 - Kali Linux Machine used as the attacking machine.
 - Nmap for running basic scans on a subnet.
