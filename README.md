@@ -2,7 +2,7 @@
 
 ## Objective
 
-The goal of this project was to conduct a penetration testing to evaluate the security posture of a network of two Linux and two Windows machines and write a comprehensive report. This penetration testing involved compromising a Linux machine and using that to pivote onto the other three machines to retreive sensitive data.
+This project aimed to conduct penetration testing to evaluate the security posture of a network of two Linux and two Windows machines and write a comprehensive report. This penetration testing involved compromising a Linux machine and using that to pivot onto the other three machines to retrieve sensitive data.
 
 ### Skills Learned
 
