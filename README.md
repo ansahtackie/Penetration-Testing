@@ -8,7 +8,7 @@ This project aimed to conduct penetration testing to evaluate the security postu
 
 - Running Linux commands to accomplish desired goals in the project.
 - Performing basic scans of a network to identify machines connected on the network.
- ![image](https://github.com/ansahtackie/Penetration-Testing/assets/148600552/68857500-1f7f-4a1e-bb23-d67322a25e8d)
+   ![image](https://github.com/ansahtackie/Penetration-Testing/assets/148600552/68857500-1f7f-4a1e-bb23-d67322a25e8d)
 - Performing port and service scans to identify ports and services running on the machines.
 - Interpreting results from port and service scans.
   
@@ -17,7 +17,7 @@ This project aimed to conduct penetration testing to evaluate the security postu
 - Ability to find a compromise vector of a system and initiate an attack.
 - Skillful in exploring available web pages to identify a good place to attempt some attacks.
 
-  ![image](https://github.com/ansahtackie/Penetration-Testing/assets/148600552/196a3588-0041-4821-b3c3-78968a9177e9)
+ ![image](https://github.com/ansahtackie/Penetration-Testing/assets/148600552/196a3588-0041-4821-b3c3-78968a9177e9)
 
 *Ubuntu machine running HTTP on port 1013 instead of running on a default port*
 
@@ -34,14 +34,12 @@ This project aimed to conduct penetration testing to evaluate the security postu
 
 -Ability to crack a MD5 password hash using existing tools on Kali.
 
-   ![image](https://github.com/ansahtackie/Penetration-Testing/assets/148600552/d1273293-8467-433a-9d34-720cbc9411dd)
+  ![image](https://github.com/ansahtackie/Penetration-Testing/assets/148600552/d1273293-8467-433a-9d34-720cbc9411dd)
 
 - Proficient in using a Metasploit session to gain access to Windows machines using Pass The Hash attack to retreive credentials.
 
 
-
    ![image](https://github.com/ansahtackie/Penetration-Testing/assets/148600552/07e64b85-eb40-478f-940f-5c6c15f3122b)
-
 
 
    ![image](https://github.com/ansahtackie/Penetration-Testing/assets/148600552/c086fe17-dd9e-4557-8620-bad25c986125)
@@ -150,10 +148,7 @@ Knowing that there were some users on the Ubuntu 22-1 hosts, we then decided to 
 - ubuntu
 - www-data
   
-
   ![image](https://github.com/ansahtackie/Penetration-Testing/assets/148600552/6c4afe29-56f8-4364-822a-c0677a740dae)
-
-
 
 
 ####  Pivoting from Ubuntu 22-1 to Ubuntu 22-2
@@ -166,7 +161,7 @@ To pivot from Ubuntu 22-1 to Ubuntu 22-2, we wanted to establish ssh connection.
 After accessing the id_rsa.pem file, we cat its content to access the required SSH key.
 
 
-   ![image](https://github.com/ansahtackie/Penetration-Testing/assets/148600552/9277da55-b37f-4671-87c9-43cc6d9ca141)
+  ![image](https://github.com/ansahtackie/Penetration-Testing/assets/148600552/9277da55-b37f-4671-87c9-43cc6d9ca141)
 
 
 The output of the command is shown below. The SSH key is the portion highlighted yellow.
@@ -180,7 +175,6 @@ The output of the command is shown below. The SSH key is the portion highlighted
 - Address: ::1
 
 
-
  ![image](https://github.com/ansahtackie/Penetration-Testing/assets/148600552/e03e040b-7583-4830-ab61-cea3d769397f)
 
 
@@ -188,14 +182,12 @@ The output of the command is shown below. The SSH key is the portion highlighted
 
 The SSH key obtained from the compromised Linux machine (Ubuntu 22-1) was copied and saved as a id_rsa.pem file on the Kali host. We did this to be able to use the SSH key from the Kali machine to pivot into the second Linux machine.
 
-  ![image](https://github.com/ansahtackie/Penetration-Testing/assets/148600552/366b371c-f02c-4fa9-8219-be7da8cd98dc)
-
+ ![image](https://github.com/ansahtackie/Penetration-Testing/assets/148600552/366b371c-f02c-4fa9-8219-be7da8cd98dc)
 
 
 ##### Connecting from Kali machine to Ubuntu 22-2 machine
 
 We used alice’s SSH key to connect from the Kali machine to the Ubuntu 22-2 machine. Ubuntu 22-2 machine was the second Linux server which was using nonstandard port (port 2222) to run ssh service. To establish the connection from the target machine (Kali machine) to the Ubuntu 22-2 machine, we had to set the permission of the id_rsa.pem file to give read, write, and execute permissions to only the user. The screenshot below shows the command and the output.
-
 
   ![image](https://github.com/ansahtackie/Penetration-Testing/assets/148600552/2761aa46-6be5-43ef-a385-3edd3f90b107)
 
@@ -208,9 +200,7 @@ With the new permissions on the SSH key file, we were able to establish a connec
 
 The screenshot is shown below:
 
-  ![image](https://github.com/ansahtackie/Penetration-Testing/assets/148600552/b4d5b164-1eed-441c-aacf-c683b5da4bc7)
-
-
+ ![image](https://github.com/ansahtackie/Penetration-Testing/assets/148600552/b4d5b164-1eed-441c-aacf-c683b5da4bc7)
 
 
 ####  System Reconnaissance
@@ -263,7 +253,6 @@ So, we had the following information:
 
 
 
-
 ####  Metasploit
 
 To establish a connection from our Kali machine to the first Windows machine, we used a Meterpreter shell. A Meterpreter shell provides shell access to a compromised system and the post modules that Metasploit provides. 
@@ -276,7 +265,6 @@ To set up a Meterpreter session, we started the Metasploit framework on our Kali
 
 
    ![image](https://github.com/ansahtackie/Penetration-Testing/assets/148600552/e4bca570-bb1c-420a-9bc9-f87861b0d00e)
-
 
 
 ##### Configuring the Module’s Options
@@ -295,7 +283,6 @@ The first Windows machine could not establish a Meterpreter session with our Kal
    ![image](https://github.com/ansahtackie/Penetration-Testing/assets/148600552/81bc1942-b9fc-43a2-92b5-dcd6421c0d3e)
 
 As shown in the screenshot above, we established a connection on the second Windows target. So, this indicated that we laterally pivoted from the first Linux machine (Ubuntu 22-1) into the second Linux machine (Ubuntu 22-2) and then to one of the Windows machines.
-
 
 
 ####  Passing The Hash
